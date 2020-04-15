@@ -1,5 +1,5 @@
 
-# minimum microservices ever! using Eureka as naming server.
+# Minimum microservices ever! using Eureka as naming server.
 
 In this example, a *cart service* will ask for data from *items service* using Eureka naming service.
 
@@ -14,13 +14,12 @@ IDE and minimum knowledge of java and spring framework.
 ### Initializing your projects
 
 We will import cart and items services from a previous repository microservices/[01-simplest-microservices](https://github.com/yyagoub/microservices/tree/master/01-simplest-microservices)/ .
-then, we are going to initializing a new project:
-From [start.spring.io](https://start.spring.io/):
+then, we are going to initializing a new project from [start.spring.io](https://start.spring.io/):
 * We will add **Eureka Server** as the only dependency we need, give your project a name -*namingserver* for instance-, then click generate.
 * extract the project and import it to your IDE
 
 ### Setup naming server
-first, let's setup server port in application.properties file,:
+first, let's setup server port in application.properties file:
 
 ```
 # you may choose any available port in your system
@@ -196,9 +195,10 @@ public class CartController {
 }
 ```
 
+# Test your application
 now open your browser and test the services:
-* http://localhost:8081/item will return: this is items service!
-* http://localhost:8082/cart will return: this is your cart items: this is items service!
+* http://localhost:8081/item will return: "this is items service!"
+* http://localhost:8082/cart will return: "this is your cart items: this is items service!"
 * http://localhost:8761/	will return a page with system status -active services for instance-.
 
 

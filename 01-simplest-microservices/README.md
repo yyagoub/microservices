@@ -1,6 +1,6 @@
-# minimum microservices ever!
+# Minimum microservices ever!
 
-In this example, a *cart service* will ask for data from *items service*.
+In this example, a *cart service* will ask *items service* for data.
 
 
 ### Prerequisites
@@ -13,9 +13,9 @@ IDE and minimum knowledge of java and spring framework.
 ### Initializing your projects
 
 From [start.spring.io](https://start.spring.io/) we are going to initializing two projects:
-* We will add **Spring Web** and **Spring Boot DevTools** as Dependencies, give your project a name -*items* for instance-, then click generate.
-* after generating *items* service, in the same page, change the name -*cart* for instance-, then click generate again.
-* extract the projects and import it to your IDE
+* We will add **Spring Web** and **Spring Boot DevTools** as dependencies, give your project a name -*items* for instance-, then click generate.
+* after generating *items* service, in the same page, change the name -*cart* for instance-, keep dependencies as it is (**Spring Web** and **Spring Boot DevTools**), then click generate again.
+* extract the projects and import them to your IDE
 
 ### Setup items service
 first, let's setup server port in application.properties file,:
@@ -84,12 +84,13 @@ public class CartController {
 }
 ```
 
+# Test your application
 now open your browser and test the services:
-* http://localhost:8081/item will return: this is items service!
-* http://localhost:8082/cart will return: this is your cart items: this is items service!
+* http://localhost:8081/item will return: "this is items service!"
+* http://localhost:8082/cart will return: "this is your cart items: this is items service!"
 
 
 
 
 
-**NOTICE**: *this is not the patter neither the design that happening in production for sure! this is only to simplify things, by break down services.*
+**NOTICE**: *this is not the pattern neither the design that happening in production environments for sure! this is only to simplify things, by break down services.*
