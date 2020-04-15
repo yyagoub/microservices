@@ -77,7 +77,7 @@ now open your browser and test the services:
 * http://localhost:8082/cart will return: "this is your cart items: this is items service!"
 * http://localhost:8761/	will return a page with system status -active services for instance-.
 * http://localhost:8762/item/item this time we will call item service through a gate way and it will return: "this is items service!"
-* http://localhost:8762/cart/cartmthis time we will call cart service through a gate way and it will return: "this is your cart items: this is items service!"
+* http://localhost:8762/cart/cartm this time we will call cart service through a gate way and it will return: "this is your cart items: this is items service!"
 
 
 
